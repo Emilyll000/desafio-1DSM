@@ -15,7 +15,7 @@
             android:name=".calculadora"
             android:exported="false" />
         <activity
-            android:name=".descuentoSalario"
+            android:name=".DescuentoSalario"
             android:exported="false" />
         <activity
             android:name=".PromedioActivity"

@@ -13,16 +13,24 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
         val btnPromedio = findViewById<Button>(R.id.btnPromedio)
+        val btnSalario = findViewById<Button>(R.id.btnSalario)
+        val btnCalculadora = findViewById<Button>(R.id.btnCalculadora)
 
         btnPromedio.setOnClickListener {
             val intent = Intent(this, PromedioActivity::class.java)
             startActivity(intent)
         }
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        btnSalario.setOnClickListener {
+            val intent = Intent(this, DescuentoSalario::class.java)
+            startActivity(intent)
+        }
+
+        btnCalculadora.setOnClickListener {
+            val intent = Intent(this, calculadora::class.java)
+            startActivity(intent)
         }
     }
 }
