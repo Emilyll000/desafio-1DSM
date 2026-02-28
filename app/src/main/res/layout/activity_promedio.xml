@@ -8,7 +8,7 @@
     tools:context=".PromedioActivity">
 
     <TextView
-        android:id="@+id/tvTitulo"
+        android:id="@+id/textviewTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Promedio"
@@ -20,56 +20,68 @@
         android:layout_marginTop="32dp"/>
 
     <EditText
-        android:id="@+id/etNota1"
+        android:id="@+id/editNombre"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese nombre del estudiante"
+        app:layout_constraintTop_toBottomOf="@id/textviewTitulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"/>
+
+    <EditText
+        android:id="@+id/editNota1"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingrese nota 1"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/tvTitulo"
+        app:layout_constraintTop_toBottomOf="@id/editNombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
     <EditText
-        android:id="@+id/etNota2"
+        android:id="@+id/editNota2"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingrese nota 2"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/etNota1"
+        app:layout_constraintTop_toBottomOf="@id/editNota1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/etNota3"
+        android:id="@+id/editNota3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingrese nota 3"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/etNota2"
+        app:layout_constraintTop_toBottomOf="@id/editNota2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/etNota4"
+        android:id="@+id/editNota4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingrese nota 4"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/etNota3"
+        app:layout_constraintTop_toBottomOf="@id/editNota3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
 
     <EditText
-        android:id="@+id/etNota5"
+        android:id="@+id/editNota5"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="Ingrese nota 5"
         android:inputType="numberDecimal"
-        app:layout_constraintTop_toBottomOf="@id/etNota4"
+        app:layout_constraintTop_toBottomOf="@id/editNota4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"/>
@@ -79,13 +91,13 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Calcular Promedio"
-        app:layout_constraintTop_toBottomOf="@id/etNota5"
+        app:layout_constraintTop_toBottomOf="@id/editNota5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
     <TextView
-        android:id="@+id/tvResultado"
+        android:id="@+id/textviewResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Resultado:"
@@ -94,5 +106,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/textviewEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/textviewResultado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

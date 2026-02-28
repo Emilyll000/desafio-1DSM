@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MB210230Desafio">
         <activity
+            android:name=".calculadora"
+            android:exported="false" />
+        <activity
+            android:name=".descuentoSalario"
+            android:exported="false" />
+        <activity
             android:name=".PromedioActivity"
             android:exported="false" />
         <activity
